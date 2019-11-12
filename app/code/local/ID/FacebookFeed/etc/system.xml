@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <id>
+            <label>Interactive Design</label>
+            <sort_order>195</sort_order>
+        </id>
+    </tabs>
+
+    <sections>
+        <facebookfeed translate="label" module="facebookfeed">
+            <label>Facebook Feed Options</label>
+            <tab>id</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>105</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <collection translate="label">
+                    <label>Product Collection Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>101</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <excluded_cats translate="label">
+                            <label>Excluded Categories</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </excluded_cats>
+
+                        <show_unavailable translate="label">
+                            <label>Show out of stock products</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </show_unavailable>
+                    </fields>
+                </collection>
+
+                <googleproducttaxonomy translate="label" module="facebookfeed">
+                    <label>Google Product Taxonomy Mapping</label>
+                    <frontend_type>text</frontend_type>
+                    <frontend_model>facebookfeed/adminhtml_system_config_form_fieldset_attribute_categories</frontend_model>
+                    <sort_order>102</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </googleproducttaxonomy>
+
+                <feed translate="label">
+                    <label>General Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>103</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <store_name translate="label">
+                            <label>Store name parameter</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </store_name>
+
+                        <xml_file_name translate="label">
+                            <label>XML filename</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </xml_file_name>
+
+                        <feed_path translate="label">
+                            <label>Feed path</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </feed_path>
+                    </fields>
+                </feed>
+
+                <messages translate="label">
+                    <label>Messages Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>104</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <in_stock translate="label">
+                            <label>Available message</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </in_stock>
+
+                        <out_of_stock translate="label">
+                            <label>Out of stock message</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </out_of_stock>
+
+                        <backorder translate="label">
+                            <label>Backorder message</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </backorder>
+
+                        <condition translate="label">
+                            <label>Condition message</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </condition>
+                    </fields>
+                </messages>
+            </groups>
+        </facebookfeed>
+    </sections>
+</config>

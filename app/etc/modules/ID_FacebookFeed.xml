@@ -1,0 +1,8 @@
+<config>
+	<modules>
+		<ID_FacebookFeed>
+			<active>true</active>
+			<codePool>local</codePool>
+		</ID_FacebookFeed>
+	</modules>
+</config>

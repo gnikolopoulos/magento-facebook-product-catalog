@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <ID_FacebookFeed>
+            <version>0.0.1</version>
+        </ID_FacebookFeed>
+    </modules>
+
+    <frontend>
+        <routers>
+            <facebookfeed>
+                <use>standard</use>
+                <args>
+                    <module>ID_FacebookFeed</module>
+                    <frontName>facebookfeed</frontName>
+                </args>
+            </facebookfeed>
+        </routers>
+    </frontend>
+
+    <global>
+        <models>
+            <facebookfeed>
+                <class>ID_FacebookFeed_Model</class>
+            </facebookfeed>
+        </models>
+
+        <blocks>
+            <facebookfeed>
+                <class>ID_FacebookFeed_Block</class>
+            </facebookfeed>
+        </blocks>
+
+        <helpers>
+            <facebookfeed>
+                <class>ID_FacebookFeed_Helper</class>
+            </facebookfeed>
+        </helpers>
+    </global>
+
+    <crontab>
+        <jobs>
+            <facebookfeed>
+                <schedule>
+                    <cron_expr>* */2 * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>facebookfeed/observer::generate</model>
+                </run>
+            </facebookfeed>
+        </jobs>
+    </crontab>
+</config>
